@@ -339,4 +339,5 @@ Wire Wire Line
 	3150 1750 2900 1750
 Text Label 2900 1750 2    60   ~ 0
 RESET
+NoConn ~ 8700 1350
 $EndSCHEMATC
