@@ -1,0 +1,15 @@
+EESchema-LIBRARY Version 2.3  Date: Вт 05 апр 2016 23:57:44
+#encoding utf-8
+#
+# PL2303
+#
+DEF PL2303 U 0 40 Y Y 1 F N
+F0 "U" 0 0 60 H V C CNN
+F1 "PL2303" 0 0 60 H V C CNN
+F2 "~" 0 0 60 H V C CNN
+F3 "~" 0 0 60 H V C CNN
+DRAW
+ENDDRAW
+ENDDEF
+#
+#End Library

@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:pl2303
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -33,9 +34,9 @@ EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 2 4
 Title ""
-Date "14 mar 2016"
+Date "7 apr 2016"
 Rev ""
 Comp ""
 Comment1 ""
@@ -48,7 +49,7 @@ L C Cin1
 U 1 1 56DED62E
 P 6350 3700
 F 0 "Cin1" H 6350 3800 40  0000 L BNN
-F 1 "0,1uF" H 6356 3615 40  0000 L CNN
+F 1 "0.1uF" H 6356 3615 40  0000 L CNN
 F 2 "~" V 6388 3550 30  0000 C CNN
 F 3 "~" H 6350 3700 60  0000 C CNN
 	1    6350 3700
