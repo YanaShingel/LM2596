@@ -1,5 +1,5 @@
-update=Ср 06 апр 2016 15:55:10
-last_client=eeschema
+update=Ср 13 апр 2016 21:17:14
+last_client=kicad
 [eeschema]
 version=1
 LibDir=
@@ -39,3 +39,5 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
+[general]
+version=1
