@@ -1,0 +1,15 @@
+EESchema-LIBRARY Version 2.3  Date: Ср 20 апр 2016 23:03:47
+#encoding utf-8
+#
+# CONN3
+#
+DEF CONN3 U 0 40 Y Y 1 F N
+F0 "U" 0 0 60 H V C CNN
+F1 "CONN3" 0 0 60 H V C CNN
+F2 "~" 0 0 60 H V C CNN
+F3 "~" 0 0 60 H V C CNN
+DRAW
+ENDDRAW
+ENDDEF
+#
+#End Library

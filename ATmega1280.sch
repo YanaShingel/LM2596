@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:conn3
 LIBS:pl2303
 LIBS:power
 LIBS:device
@@ -36,7 +37,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 4
 Title ""
-Date "14 apr 2016"
+Date "20 apr 2016"
 Rev ""
 Comp ""
 Comment1 ""
@@ -420,10 +421,6 @@ Text HLabel 8100 4650 2    60   Input ~ 0
 RXD
 Text HLabel 8100 4800 2    60   Input ~ 0
 TXD
-Text Label 2800 4450 0    60   ~ 0
-RXD
-Text Label 2800 4550 0    60   ~ 0
-TXD
 $Comp
 L 74HCT541_PWR U1
 U 1 1 5706A061
@@ -538,7 +535,7 @@ F 3 "" H 9500 4050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 9300 3750 0    60   ~ 0
-CE
+CE2
 Text Label 8250 2050 0    60   ~ 0
 A3
 Text Label 9300 2050 0    60   ~ 0
@@ -640,13 +637,9 @@ Wire Wire Line
 Wire Wire Line
 	8100 4800 7800 4800
 Text Label 7800 4650 0    60   ~ 0
-RXD
+RXD0
 Text Label 7800 4800 0    60   ~ 0
-TXD
-Wire Wire Line
-	3150 4450 2800 4450
-Wire Wire Line
-	3150 4550 2800 4550
+TXD0
 NoConn ~ 3150 2650
 NoConn ~ 3150 2750
 NoConn ~ 3150 2850
@@ -694,19 +687,67 @@ NoConn ~ 5750 5850
 NoConn ~ 5750 5750
 NoConn ~ 5750 5650
 NoConn ~ 5750 5550
-NoConn ~ 5750 5450
-NoConn ~ 5750 5350
 NoConn ~ 5750 5150
 NoConn ~ 5750 5050
 NoConn ~ 5750 4950
 NoConn ~ 5750 4850
-NoConn ~ 5750 4750
-NoConn ~ 5750 4650
-NoConn ~ 5750 4550
 NoConn ~ 5750 4450
 NoConn ~ 5750 3350
 NoConn ~ 5750 3250
 NoConn ~ 5750 3150
 NoConn ~ 5750 3050
 NoConn ~ 5750 2650
+Wire Wire Line
+	5750 5350 6000 5350
+Text Label 6000 5350 2    60   ~ 0
+RXD0
+Wire Wire Line
+	5750 5450 6000 5450
+Text Label 6000 5450 2    60   ~ 0
+TXD0
+NoConn ~ 5750 4550
+Wire Wire Line
+	5750 4650 6050 4650
+Wire Wire Line
+	5750 4750 6050 4750
+Text Label 6050 4650 2    60   ~ 0
+RXD1
+Text Label 6050 4750 2    60   ~ 0
+TXD1
+NoConn ~ 3150 4450
+NoConn ~ 3150 4550
+$Comp
+L CONN3 U?
+U 1 1 5717E35D
+P 7250 5400
+F 0 "U?" H 7600 4750 60  0000 C CNN
+F 1 "CONN3" H 7600 5150 60  0000 C CNN
+F 2 "" H 7250 5400 60  0000 C CNN
+F 3 "" H 7250 5400 60  0000 C CNN
+	1    7250 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 5600 8450 5600
+Wire Wire Line
+	8050 5700 8450 5700
+Wire Wire Line
+	8050 5800 8450 5800
+Wire Wire Line
+	8450 5800 8450 5900
+$Comp
+L GND #PWR?
+U 1 1 5717E47B
+P 8450 5900
+F 0 "#PWR?" H 8450 5650 50  0001 C CNN
+F 1 "GND" H 8450 5750 50  0000 C CNN
+F 2 "" H 8450 5900 50  0000 C CNN
+F 3 "" H 8450 5900 50  0000 C CNN
+	1    8450 5900
+	1    0    0    -1  
+$EndComp
+Text Label 8450 5600 2    60   ~ 0
+RXD1
+Text Label 8450 5700 2    60   ~ 0
+TXD1
 $EndSCHEMATC
