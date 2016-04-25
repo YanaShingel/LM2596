@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:Pulse_Module-rescue
 LIBS:conn3
 LIBS:pl2303
 LIBS:power
@@ -24,6 +25,7 @@ LIBS:interface
 LIBS:digital-audio
 LIBS:philips
 LIBS:display
+LIBS:ws2812
 LIBS:cypress
 LIBS:siliconi
 LIBS:opto
@@ -31,7 +33,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:Pulse_Module-cache
-EELAYER 27 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -61,7 +63,7 @@ F0 "Sheet56DEE0DD" 50
 F1 "ATmega1280.sch" 50
 $EndSheet
 Text HLabel 4450 3750 2    60   Input ~ 0
-PULSE
+Vcc
 Wire Wire Line
 	3500 3750 4450 3750
 $EndSCHEMATC
