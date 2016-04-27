@@ -507,10 +507,6 @@ NoConn ~ 3150 6050
 NoConn ~ 3150 6550
 NoConn ~ 3150 6650
 NoConn ~ 3150 6750
-NoConn ~ 5750 6950
-NoConn ~ 5750 6850
-NoConn ~ 5750 6750
-NoConn ~ 5750 6650
 NoConn ~ 5750 6550
 NoConn ~ 5750 6450
 NoConn ~ 5750 6350
@@ -525,12 +521,10 @@ NoConn ~ 5750 5150
 NoConn ~ 5750 5050
 NoConn ~ 5750 4950
 NoConn ~ 5750 4850
-NoConn ~ 5750 4450
 NoConn ~ 5750 3350
 NoConn ~ 5750 3250
 NoConn ~ 5750 3150
 NoConn ~ 5750 3050
-NoConn ~ 5750 2650
 Text Label 6000 5350 2    60   ~ 0
 RXD0
 Text Label 6000 5450 2    60   ~ 0
@@ -626,9 +620,9 @@ Wire Wire Line
 Connection ~ 2650 3450
 Connection ~ 10150 3350
 Wire Wire Line
-	5750 2950 5950 2950
+	5750 2950 6250 2950
 Wire Wire Line
-	5750 2850 5950 2850
+	5750 2850 6250 2850
 Wire Wire Line
 	5750 2750 5950 2750
 Wire Wire Line
@@ -1158,6 +1152,103 @@ F 1 "+5V" H 7550 1440 50  0000 C CNN
 F 2 "" H 7550 1300 50  0000 C CNN
 F 3 "" H 7550 1300 50  0000 C CNN
 	1    7550 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 4450 6050 4450
+Text Label 6050 4450 2    60   ~ 0
+CLK
+Wire Wire Line
+	5750 2650 5950 2650
+Text Label 5950 2650 2    60   ~ 0
+CE
+Text Label 6250 2950 2    60   ~ 0
+Dout
+Text Label 6250 2850 2    60   ~ 0
+CS
+$Comp
+L AVR-JTAG-10 CON?
+U 1 1 57211968
+P 6650 5900
+F 0 "CON?" H 6480 6230 50  0000 C CNN
+F 1 "AVR-JTAG-10" H 6310 5570 50  0000 L BNN
+F 2 "AVR-JTAG-10" V 6080 5920 50  0001 C CNN
+F 3 "" H 6650 5900 50  0000 C CNN
+	1    6650 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 6650 6050 6650
+Wire Wire Line
+	5750 6750 6050 6750
+Wire Wire Line
+	5750 6850 6050 6850
+Wire Wire Line
+	5750 6950 6050 6950
+Wire Wire Line
+	6450 5700 6050 5700
+Wire Wire Line
+	6450 5800 6050 5800
+Wire Wire Line
+	6450 5900 6050 5900
+Wire Wire Line
+	6450 6000 6050 6000
+Wire Wire Line
+	6450 6100 6050 6100
+NoConn ~ 6050 6000
+Text Label 6050 5700 0    60   ~ 0
+TCK
+Text Label 6050 5800 0    60   ~ 0
+TDO
+Text Label 6050 5900 0    60   ~ 0
+TMS
+Text Label 6050 6100 0    60   ~ 0
+TDI
+Text Label 6050 6650 2    60   ~ 0
+TCK
+Text Label 6050 6750 2    60   ~ 0
+TMS
+Text Label 6050 6850 2    60   ~ 0
+TDO
+Text Label 6050 6950 2    60   ~ 0
+TDI
+Wire Wire Line
+	6700 5900 7100 5900
+Wire Wire Line
+	6700 6000 7100 6000
+NoConn ~ 7100 5900
+NoConn ~ 7100 6000
+Wire Wire Line
+	6700 5700 7300 5700
+Wire Wire Line
+	7300 5700 7300 6300
+Wire Wire Line
+	6700 6100 7300 6100
+Connection ~ 7300 6100
+$Comp
+L GND #PWR?
+U 1 1 57212B56
+P 7300 6300
+F 0 "#PWR?" H 7300 6050 50  0001 C CNN
+F 1 "GND" H 7300 6150 50  0000 C CNN
+F 2 "" H 7300 6300 50  0000 C CNN
+F 3 "" H 7300 6300 50  0000 C CNN
+	1    7300 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 5800 7150 5800
+Wire Wire Line
+	7150 5800 7150 5400
+$Comp
+L +5V #PWR?
+U 1 1 57212CB0
+P 7150 5400
+F 0 "#PWR?" H 7150 5250 50  0001 C CNN
+F 1 "+5V" H 7150 5540 50  0000 C CNN
+F 2 "" H 7150 5400 50  0000 C CNN
+F 3 "" H 7150 5400 50  0000 C CNN
+	1    7150 5400
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
