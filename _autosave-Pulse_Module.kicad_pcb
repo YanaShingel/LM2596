@@ -2221,7 +2221,7 @@
   )
 
   (module Display:HDSP-48xx (layer F.Cu) (tedit 0) (tstamp 572C570A)
-    (at 35.56 3.81)
+    (at 215.9 73.66)
     (descr "Barre 10 points")
     (tags BARGRAPH)
     (path /56DEE0DE/5706A061)
