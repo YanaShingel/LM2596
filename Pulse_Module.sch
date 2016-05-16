@@ -48,15 +48,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 3000 3650 500  400 
-U 56D88A8E
-F0 "Sheet56D88A8D" 50
-F1 "LM2596.sch" 50
-F2 "Vin" I L 3000 3750 60 
-F3 "Vout" I R 3500 3750 60 
-F4 "CS" I L 3000 3900 60 
-$EndSheet
-$Sheet
 S 4450 3650 700  500 
 U 56DEE0DE
 F0 "Sheet56DEE0DD" 50
@@ -66,4 +57,13 @@ Text HLabel 4450 3750 2    60   Input ~ 0
 Vcc
 Wire Wire Line
 	3500 3750 4450 3750
+$Sheet
+S 3000 3650 500  400 
+U 56D88A8E
+F0 "Sheet56D88A8D" 50
+F1 "LM2596.sch" 50
+F2 "Vin" I L 3000 3750 60 
+F3 "Vout" I R 3500 3750 60 
+F4 "CS" I L 3000 3900 60 
+$EndSheet
 $EndSCHEMATC

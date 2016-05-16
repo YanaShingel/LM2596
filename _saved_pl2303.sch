@@ -520,7 +520,7 @@ Wire Wire Line
 Wire Wire Line
 	7900 1800 7900 1950
 Wire Wire Line
-	7900 1950 8700 1950
+	7900 1950 9050 1950
 Wire Wire Line
 	8700 1950 8700 1800
 Wire Wire Line
@@ -528,7 +528,7 @@ Wire Wire Line
 Wire Wire Line
 	7900 1350 7900 1500
 Wire Wire Line
-	7900 1350 8700 1350
+	7900 1350 9050 1350
 Wire Wire Line
 	8300 1100 8300 1500
 Connection ~ 8300 1350
@@ -667,4 +667,21 @@ Wire Wire Line
 Wire Wire Line
 	8500 5400 8650 5400
 NoConn ~ 8650 5300
+$Comp
+L C C16
+U 1 1 5739D45A
+P 9050 1650
+F 0 "C16" H 9075 1750 50  0000 L CNN
+F 1 "0.1uF" H 9075 1550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 9088 1500 50  0001 C CNN
+F 3 "" H 9050 1650 50  0000 C CNN
+	1    9050 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 1350 9050 1500
+Connection ~ 8700 1350
+Wire Wire Line
+	9050 1950 9050 1800
+Connection ~ 8700 1950
 $EndSCHEMATC
