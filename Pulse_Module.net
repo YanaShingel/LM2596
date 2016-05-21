@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/yana/PulseModule/Pulse_Module.sch)
-    (date "Сб 21 май 2016 14:33:07")
+    (date "Сб 21 май 2016 22:00:56")
     (tool "Eeschema 4.0.2+dfsg1-2~bpo8+1-stable")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -344,7 +344,7 @@
       (tstamp 56DED62E))
     (comp (ref Cff1)
       (value 33nF)
-      (footprint Capacitors_ThroughHole:C_Radial_D6.3_L11.2_P2.5)
+      (footprint Capacitors_SMD:C_0805)
       (libsource (lib device) (part C))
       (sheetpath (names /Sheet56D88A8D/) (tstamps /56D88A8E/))
       (tstamp 56DED634))
