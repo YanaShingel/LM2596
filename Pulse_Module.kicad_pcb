@@ -1,15 +1,15 @@
 (kicad_pcb (version 4) (host pcbnew 4.0.2+dfsg1-2~bpo8+1-stable)
 
   (general
-    (links 192)
-    (no_connects 157)
+    (links 193)
+    (no_connects 156)
     (area 0 0 0 0)
     (thickness 1.6)
     (drawings 0)
     (tracks 167)
     (zones 0)
     (modules 61)
-    (nets 148)
+    (nets 147)
   )
 
   (page A4)
@@ -37,7 +37,7 @@
   )
 
   (setup
-    (last_trace_width 1)
+    (last_trace_width 0.25)
     (user_trace_width 0.3)
     (user_trace_width 0.4)
     (user_trace_width 0.6)
@@ -243,7 +243,6 @@
   (net 144 "Net-(IC1-Pad89)")
   (net 145 "Net-(JP2-Pad2)")
   (net 146 "Net-(JP2-Pad1)")
-  (net 147 "Net-(JP2-Pad3)")
 
   (net_class Default "This is the default net class."
     (clearance 0.1)
@@ -375,7 +374,6 @@
     (add_net "Net-(IC1-Pad95)")
     (add_net "Net-(JP2-Pad1)")
     (add_net "Net-(JP2-Pad2)")
-    (add_net "Net-(JP2-Pad3)")
     (add_net "Net-(P1-Pad19)")
     (add_net "Net-(P2-Pad2)")
     (add_net "Net-(P2-Pad3)")
@@ -2724,7 +2722,7 @@
     (pad 2 thru_hole oval (at 0 0 90) (size 1.50622 3.01498) (drill 0.99822) (layers *.Cu *.Mask)
       (net 145 "Net-(JP2-Pad2)"))
     (pad 3 thru_hole oval (at 2.54 0 90) (size 1.50622 3.01498) (drill 0.99822) (layers *.Cu *.Mask)
-      (net 147 "Net-(JP2-Pad3)"))
+      (net 16 /Sheet56D88A8D/FB))
   )
 
   (segment (start 178.139999 96.394999) (end 180.160001 96.394999) (width 0.25) (layer F.Cu) (net 0))
