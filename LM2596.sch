@@ -1,7 +1,6 @@
 EESchema Schematic File Version 2
 LIBS:Pulse_Module-rescue
 LIBS:conn3
-LIBS:pl2303
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -137,12 +136,12 @@ $EndComp
 $Comp
 L R R14
 U 1 1 572B2DAD
-P 8200 3450
-F 0 "R14" V 8280 3450 50  0000 C CNN
-F 1 "1k" V 8200 3450 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 8130 3450 50  0001 C CNN
-F 3 "" H 8200 3450 50  0000 C CNN
-	1    8200 3450
+P 8040 3460
+F 0 "R14" V 8120 3460 50  0000 C CNN
+F 1 "1k" V 8040 3460 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 7970 3460 50  0001 C CNN
+F 3 "" H 8040 3460 50  0000 C CNN
+	1    8040 3460
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -176,7 +175,18 @@ F 1 "JUMPER3" H 8200 4105 50  0000 C BNN
 F 2 "Connect:PINHEAD1-3" H 8200 4005 50  0001 C CNN
 F 3 "" H 8200 4005 50  0000 C CNN
 	1    8200 4005
-	0    -1   -1   0   
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR037
+U 1 1 57477506
+P 8625 4755
+F 0 "#PWR037" H 8625 4505 50  0001 C CNN
+F 1 "GND" H 8625 4605 50  0000 C CNN
+F 2 "" H 8625 4755 50  0000 C CNN
+F 3 "" H 8625 4755 50  0000 C CNN
+	1    8625 4755
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	4500 3300 5100 3300
@@ -190,14 +200,9 @@ Connection ~ 6050 3300
 Wire Wire Line
 	7750 3150 7750 3300
 Wire Wire Line
-	6350 3150 8200 3150
+	6350 3150 8040 3150
 Connection ~ 6350 3300
 Connection ~ 7750 3150
-Wire Wire Line
-	7425 3700 8200 3700
-Wire Wire Line
-	7750 3700 7750 3600
-Connection ~ 7750 3700
 Wire Wire Line
 	4900 4100 4900 3900
 Connection ~ 3900 4100
@@ -215,11 +220,6 @@ Wire Wire Line
 Wire Wire Line
 	3900 4100 6350 4100
 Wire Wire Line
-	8200 3150 8200 3300
-Wire Wire Line
-	8200 3600 8200 3755
-Connection ~ 8200 3700
-Wire Wire Line
 	8200 4255 8200 4310
 Wire Wire Line
 	8200 4610 8200 4680
@@ -228,21 +228,22 @@ Wire Wire Line
 Wire Wire Line
 	9000 4680 9000 4610
 Wire Wire Line
-	9000 4310 9000 4000
-Wire Wire Line
-	9000 4000 8300 4005
+	9000 3755 9000 4310
 Wire Wire Line
 	8625 4680 8625 4755
 Connection ~ 8625 4680
-$Comp
-L GND #PWR037
-U 1 1 57477506
-P 8625 4755
-F 0 "#PWR037" H 8625 4505 50  0001 C CNN
-F 1 "GND" H 8625 4605 50  0000 C CNN
-F 2 "" H 8625 4755 50  0000 C CNN
-F 3 "" H 8625 4755 50  0000 C CNN
-	1    8625 4755
-	1    0    0    -1  
-$EndComp
+Wire Wire Line
+	8040 3150 8040 3310
+Wire Wire Line
+	8040 3610 8040 4005
+Wire Wire Line
+	8040 4005 8100 4005
+Wire Wire Line
+	7425 3700 8040 3700
+Connection ~ 8040 3700
+Wire Wire Line
+	7750 3600 7750 3700
+Connection ~ 7750 3700
+Wire Wire Line
+	8200 3755 9000 3755
 $EndSCHEMATC
