@@ -1,7 +1,6 @@
 EESchema Schematic File Version 2
 LIBS:Pulse_Module-rescue
 LIBS:conn3
-LIBS:pl2303
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -52,9 +51,8 @@ S 4450 3650 700  500
 U 56DEE0DE
 F0 "Sheet56DEE0DD" 50
 F1 "ATmega1280.sch" 50
+F2 "Vcc" I L 4450 3750 60 
 $EndSheet
-Text HLabel 4450 3750 2    60   Input ~ 0
-Vcc
 Wire Wire Line
 	3500 3750 4450 3750
 $Sheet

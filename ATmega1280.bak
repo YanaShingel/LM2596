@@ -1,7 +1,6 @@
 EESchema Schematic File Version 2
 LIBS:Pulse_Module-rescue
 LIBS:conn3
-LIBS:pl2303
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -83,23 +82,23 @@ $EndComp
 $Comp
 L R R6
 U 1 1 56E703F2
-P 3150 1350
-F 0 "R6" V 3230 1350 50  0000 C CNN
-F 1 "R1" V 3150 1350 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 3080 1350 50  0001 C CNN
-F 3 "" H 3150 1350 50  0000 C CNN
-	1    3150 1350
+P 3020 1485
+F 0 "R6" V 3100 1485 50  0000 C CNN
+F 1 "R1" V 3020 1485 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 2950 1485 50  0001 C CNN
+F 3 "" H 3020 1485 50  0000 C CNN
+	1    3020 1485
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR03
 U 1 1 56E704E1
-P 4450 7500
-F 0 "#PWR03" H 4450 7250 50  0001 C CNN
-F 1 "GND" H 4450 7350 50  0000 C CNN
-F 2 "" H 4450 7500 50  0000 C CNN
-F 3 "" H 4450 7500 50  0000 C CNN
-	1    4450 7500
+P 4450 7545
+F 0 "#PWR03" H 4450 7295 50  0001 C CNN
+F 1 "GND" H 4450 7395 50  0000 C CNN
+F 2 "" H 4450 7545 50  0000 C CNN
+F 3 "" H 4450 7545 50  0000 C CNN
+	1    4450 7545
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -241,7 +240,6 @@ F 3 "" H 10350 800 50  0000 C CNN
 $EndComp
 Text Label 2900 1750 2    60   ~ 0
 RESET
-NoConn ~ 9400 1200
 $Comp
 L JUMPER JP1
 U 1 1 56F2E87D
@@ -253,7 +251,7 @@ F 3 "" H 2850 1100 50  0000 C CNN
 	1    2850 1100
 	1    0    0    -1  
 $EndComp
-Text HLabel 2550 1100 0    60   Input ~ 0
+Text HLabel 2475 1100 0    60   Input ~ 0
 Vcc
 $Comp
 L +5V #PWR08
@@ -293,6 +291,9 @@ S 8100 4550 950  550
 U 570520A1
 F0 "Sheet570520A0" 50
 F1 "pl2303.sch" 50
+F2 "TXD" I L 8100 4800 60 
+F3 "RXD" I L 8100 4650 60 
+F4 "RESET" I R 9050 4745 60 
 $EndSheet
 $Comp
 L CONN_02X20 P1
@@ -305,10 +306,6 @@ F 3 "" H 9050 2050 50  0000 C CNN
 	1    9050 3000
 	1    0    0    -1  
 $EndComp
-Text HLabel 8100 4650 2    60   Input ~ 0
-RXD
-Text HLabel 8100 4800 2    60   Input ~ 0
-TXD
 $Comp
 L 74HCT541_PWR U1
 U 1 1 5706A061
@@ -366,7 +363,6 @@ ALE
 Text Label 6600 2650 0    60   ~ 0
 ALE
 NoConn ~ 6850 2750
-NoConn ~ 8800 2950
 Text Label 8600 3750 0    60   ~ 0
 35
 Text Label 8600 3850 0    60   ~ 0
@@ -457,9 +453,7 @@ Text Label 2900 6250 0    60   ~ 0
 WR
 Text Label 2900 6350 0    60   ~ 0
 RD
-Text HLabel 9050 4950 0    60   Input ~ 0
-RESET
-Text Label 9450 4950 2    60   ~ 0
+Text Label 9450 4745 2    60   ~ 0
 RESET
 Text Label 7800 4650 0    60   ~ 0
 RXD0
@@ -534,10 +528,6 @@ Wire Wire Line
 	4300 1100 4300 1450
 Connection ~ 4200 1100
 Connection ~ 4300 1100
-Wire Wire Line
-	3150 1750 3150 1500
-Wire Wire Line
-	3150 1200 3150 1100
 Connection ~ 3500 1100
 Wire Wire Line
 	4300 7250 4300 7500
@@ -589,8 +579,6 @@ Wire Wire Line
 	5750 2750 5950 2750
 Wire Wire Line
 	9800 1100 9200 1100
-Wire Wire Line
-	9800 1200 9400 1200
 Wire Wire Line
 	9200 1300 9800 1300
 Wire Wire Line
@@ -662,7 +650,7 @@ Wire Wire Line
 Wire Wire Line
 	4600 1100 4600 1450
 Wire Wire Line
-	9050 4950 9450 4950
+	9050 4745 9450 4745
 Wire Wire Line
 	8100 4650 7800 4650
 Wire Wire Line
@@ -773,8 +761,6 @@ Wire Wire Line
 	9300 3750 9500 3750
 Text Label 9500 3250 2    60   ~ 0
 A12
-Text Label 3000 2650 0    60   ~ 0
-17
 Text Label 3000 2750 0    60   ~ 0
 35
 Text Label 3000 2850 0    60   ~ 0
@@ -816,7 +802,7 @@ L C C7
 U 1 1 571E94CF
 P 1650 4150
 F 0 "C7" H 1675 4250 50  0000 L CNN
-F 1 "10nF" H 1675 4050 50  0000 L CNN
+F 1 "10nF" V 1585 3910 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 1688 4000 50  0001 C CNN
 F 3 "" H 1650 4150 50  0000 C CNN
 	1    1650 4150
@@ -1069,10 +1055,7 @@ Wire Wire Line
 Wire Wire Line
 	6450 5900 6050 5900
 Wire Wire Line
-	6450 6000 6050 6000
-Wire Wire Line
 	6450 6100 6050 6100
-NoConn ~ 6050 6000
 Text Label 6050 5700 0    60   ~ 0
 TCK
 Text Label 6050 5800 0    60   ~ 0
@@ -1089,12 +1072,7 @@ Text Label 6050 6850 2    60   ~ 0
 TDO
 Text Label 6050 6950 2    60   ~ 0
 TDI
-Wire Wire Line
-	6700 5900 7100 5900
-Wire Wire Line
-	6700 6000 7100 6000
-NoConn ~ 7100 5900
-NoConn ~ 7100 6000
+NoConn ~ 6450 6000
 Wire Wire Line
 	6700 5700 7300 5700
 Wire Wire Line
@@ -1185,8 +1163,6 @@ Text Label 3000 3250 0    60   ~ 0
 Text Label 3000 3350 0    60   ~ 0
 40
 Wire Wire Line
-	3000 2650 3150 2650
-Wire Wire Line
 	3150 2750 3000 2750
 Wire Wire Line
 	3150 2850 3000 2850
@@ -1208,7 +1184,6 @@ NoConn ~ 3150 3950
 NoConn ~ 3150 4050
 NoConn ~ 3150 4150
 NoConn ~ 3150 4250
-NoConn ~ 3800 3450
 Wire Wire Line
 	5750 6250 6000 6250
 Wire Wire Line
@@ -1217,4 +1192,29 @@ Text Label 6000 6250 2    60   ~ 0
 CE1
 Text Label 6000 6350 2    60   ~ 0
 CE2
+NoConn ~ 6700 6000
+NoConn ~ 6700 5900
+Wire Wire Line
+	2550 1100 2475 1100
+NoConn ~ 9800 1200
+NoConn ~ 8800 2950
+NoConn ~ 3150 2650
+Wire Wire Line
+	4450 7545 4450 7500
+Wire Wire Line
+	3020 1750 3020 1635
+Connection ~ 3020 1750
+Wire Wire Line
+	3020 1335 3020 1270
+Wire Wire Line
+	3020 1270 3205 1270
+Wire Wire Line
+	3205 1270 3205 1100
+Connection ~ 3205 1100
+Text Notes 9685 3235 0    60   ~ 0
+10
+Text Notes 10040 3245 0    60   ~ 0
+31
+Text Notes 10390 3240 0    60   ~ 0
+80
 $EndSCHEMATC

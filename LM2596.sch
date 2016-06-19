@@ -218,7 +218,7 @@ Connection ~ 6050 4100
 Wire Wire Line
 	2800 3450 3100 3450
 Wire Wire Line
-	3900 4100 6350 4100
+	3065 4100 6350 4100
 Wire Wire Line
 	8200 4255 8200 4310
 Wire Wire Line
@@ -246,4 +246,20 @@ Wire Wire Line
 Connection ~ 7750 3700
 Wire Wire Line
 	8200 3755 9000 3755
+$Comp
+L C C20
+U 1 1 5756A584
+P 3065 3675
+F 0 "C20" H 3090 3775 50  0000 L CNN
+F 1 "470uF" H 3090 3575 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D7.5_L11.2_P2.5" H 3103 3525 50  0001 C CNN
+F 3 "" H 3065 3675 50  0000 C CNN
+	1    3065 3675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3065 3525 3065 3450
+Connection ~ 3065 3450
+Wire Wire Line
+	3065 3825 3065 4100
 $EndSCHEMATC
