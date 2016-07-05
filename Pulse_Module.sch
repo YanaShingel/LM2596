@@ -1,6 +1,7 @@
 EESchema Schematic File Version 2
 LIBS:Pulse_Module-rescue
 LIBS:conn3
+LIBS:pl2303
 LIBS:power
 LIBS:device
 LIBS:transistors

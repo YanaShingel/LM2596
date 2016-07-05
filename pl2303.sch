@@ -1,6 +1,7 @@
 EESchema Schematic File Version 2
 LIBS:Pulse_Module-rescue
 LIBS:conn3
+LIBS:pl2303
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -421,19 +422,7 @@ Wire Wire Line
 	7200 6050 6750 6050
 Wire Wire Line
 	7200 6300 6750 6300
-Wire Wire Line
-	7500 6050 8150 6050
-Wire Wire Line
-	7500 6300 8300 6300
 Connection ~ 7700 6300
-Wire Wire Line
-	8150 6050 8150 5100
-Wire Wire Line
-	8150 5100 8650 5100
-Wire Wire Line
-	8300 6300 8300 5200
-Wire Wire Line
-	8300 5200 8650 5200
 Wire Wire Line
 	2800 4650 3550 4650
 Wire Wire Line
@@ -601,8 +590,6 @@ Wire Wire Line
 Connection ~ 2550 4400
 Wire Wire Line
 	8650 5000 8500 5000
-Wire Wire Line
-	8500 5000 8500 4400
 $Comp
 L +5V #PWR032
 U 1 1 571E81DD
@@ -693,4 +680,62 @@ Text Notes 1820 1640 0    60   ~ 0
 20
 Text Notes 8595 3655 0    60   ~ 0
 17
+Wire Wire Line
+	8160 5200 8650 5200
+Wire Wire Line
+	7940 6050 7500 6050
+Wire Wire Line
+	8160 5145 8160 6300
+Wire Wire Line
+	8160 6300 7500 6300
+Wire Wire Line
+	7940 4615 7940 6050
+$Comp
+L JUMPER3 JP?
+U 1 1 577BDA08
+P 8160 4895
+F 0 "JP?" H 8210 4795 50  0000 L CNN
+F 1 "JUMPER3" H 8160 4995 50  0000 C BNN
+F 2 "" H 8160 4895 50  0000 C CNN
+F 3 "" H 8160 4895 50  0000 C CNN
+	1    8160 4895
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8650 5100 8340 5100
+Wire Wire Line
+	8340 5100 8340 4895
+Wire Wire Line
+	8340 4895 8260 4895
+Connection ~ 8160 5200
+Wire Wire Line
+	8160 4645 8160 4615
+Wire Wire Line
+	8160 4615 7940 4615
+$Comp
+L JUMPER3 JP?
+U 1 1 577BEAFF
+P 8835 4565
+F 0 "JP?" H 8885 4465 50  0000 L CNN
+F 1 "JUMPER3" H 8835 4665 50  0000 C BNN
+F 2 "" H 8835 4565 50  0000 C CNN
+F 3 "" H 8835 4565 50  0000 C CNN
+	1    8835 4565
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 4820 8835 4820
+Wire Wire Line
+	8835 4820 8835 4665
+Connection ~ 8500 4820
+Wire Wire Line
+	8500 5000 8500 4820
+Wire Wire Line
+	8585 4565 8500 4565
+Wire Wire Line
+	8500 4565 8500 4400
+Wire Wire Line
+	9085 4565 9270 4565
+Text GLabel 9270 4565 2    60   Input Italic 0
+USB_IN
 $EndSCHEMATC

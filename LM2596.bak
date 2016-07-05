@@ -258,10 +258,6 @@ F 3 "" H 3065 3675 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6050 3700 6450 3700
-Wire Wire Line
-	6450 3700 6450 3600
-Wire Wire Line
 	3065 3525 3065 3450
 Connection ~ 3065 3450
 Wire Wire Line
