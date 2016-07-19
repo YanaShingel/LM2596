@@ -1,6 +1,7 @@
 EESchema Schematic File Version 2
 LIBS:Pulse_Module-rescue
 LIBS:conn3
+LIBS:pl2303
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -1213,8 +1214,25 @@ Connection ~ 3020 1750
 Wire Wire Line
 	3020 1335 3020 1270
 Wire Wire Line
-	3020 1270 3205 1270
+	3205 1270 3020 1270
 Wire Wire Line
-	3205 1270 3205 1100
+	3205 740  3205 1270
 Connection ~ 3205 1100
+Text GLabel 2460 740  0    60   Input ~ 0
+USB_5V
+$Comp
+L JUMPER JP?
+U 1 1 578E6590
+P 2860 740
+F 0 "JP?" H 2860 890 50  0000 C CNN
+F 1 "JUMPER" H 2860 660 50  0000 C CNN
+F 2 "" H 2860 740 50  0000 C CNN
+F 3 "" H 2860 740 50  0000 C CNN
+	1    2860 740 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2460 740  2560 740 
+Wire Wire Line
+	3160 740  3205 740 
 $EndSCHEMATC
