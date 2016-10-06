@@ -1,4 +1,4 @@
-update=Пн 25 апр 2016 12:38:23
+update=Чт 06 окт 2016 20:19:05
 last_client=kicad
 [general]
 version=1
@@ -39,3 +39,4 @@ LibName30=opto
 LibName31=atmel
 LibName32=contrib
 LibName33=valves
+LibName34=AMS1117
