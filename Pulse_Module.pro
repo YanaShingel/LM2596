@@ -1,10 +1,10 @@
-update=Чт 06 окт 2016 20:19:05
+update=Пн 31 окт 2016 23:19:30
 last_client=kicad
 [general]
 version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=../Загрузки/kicadlibrary
 [eeschema/libraries]
 LibName1=Pulse_Module-rescue
 LibName2=conn3
@@ -33,10 +33,12 @@ LibName24=digital-audio
 LibName25=philips
 LibName26=display
 LibName27=ws2812
-LibName28=cypress
-LibName29=siliconi
-LibName30=opto
-LibName31=atmel
-LibName32=contrib
-LibName33=valves
-LibName34=AMS1117
+LibName28=/home/yana/kicadlibrary/open-project
+LibName29=cypress
+LibName30=siliconi
+LibName31=opto
+LibName32=atmel
+LibName33=contrib
+LibName34=valves
+LibName35=AMS1117
+LibName36=/home/yana/Загрузки/kicadlibrary/open-project
