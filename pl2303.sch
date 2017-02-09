@@ -26,6 +26,7 @@ LIBS:digital-audio
 LIBS:philips
 LIBS:display
 LIBS:ws2812
+LIBS:open-project
 LIBS:cypress
 LIBS:siliconi
 LIBS:opto
@@ -605,7 +606,7 @@ U 1 1 57233EDC
 P 8950 5200
 F 0 "P2" H 9275 5075 50  0000 C CNN
 F 1 "USB_OTG" H 8950 5400 50  0000 C CNN
-F 2 "Connect:USB_Micro-B" V 8900 5100 50  0001 C CNN
+F 2 "open-project:MICRO-B_USB" V 8900 5100 50  0001 C CNN
 F 3 "" V 8900 5100 50  0000 C CNN
 	1    8950 5200
 	0    1    1    0   

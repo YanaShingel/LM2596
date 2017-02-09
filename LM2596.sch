@@ -26,6 +26,7 @@ LIBS:digital-audio
 LIBS:philips
 LIBS:display
 LIBS:ws2812
+LIBS:open-project
 LIBS:cypress
 LIBS:siliconi
 LIBS:opto
